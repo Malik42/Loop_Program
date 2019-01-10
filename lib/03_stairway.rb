@@ -41,7 +41,9 @@ def computer_game()
         if de == 5 || de == 6
             marche += 1
         elsif de == 1
-            marche -= 1
+            if marche > 1
+                marche -= 1
+            end
         end
         if marche == 10
             return (try)
