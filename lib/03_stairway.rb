@@ -24,7 +24,7 @@ def jeux()
             end
             if marche == 10
                 puts "BRAVO VOUS ETES A LA CASE 10!"
-                exit
+                break
             end
         else
             puts "Il faut appuyer sur entrez pour lancer le dé"
