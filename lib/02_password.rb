@@ -1,7 +1,6 @@
 require 'io/console'
 
 def signup()
-    
     password = ""
     
     loop do
