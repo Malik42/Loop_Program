@@ -1,8 +1,12 @@
+require 'io/console'
+
 def signup()
+    
     password = ""
+    
     loop do
         puts "Veuillez definir votre mot de passe"
-        require 'io/console'
+        
         password = STDIN.noecho(&:gets).chomp
         if password != ""
             return password
