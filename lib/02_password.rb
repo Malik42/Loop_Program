@@ -2,7 +2,8 @@ def signup()
     password = ""
     loop do
         puts "Veuillez definir votre mot de passe"
-        password = gets.chomp
+        require 'io/console'
+        password = STDIN.noecho(&:gets).chomp
         if password != ""
             return password
         end
@@ -12,7 +13,7 @@ end
 def login(password)
     loop do
         puts "Veuillez entrez votre mot de passe"
-        password_verif = gets.chomp
+        password_verif = STDIN.noecho(&:gets).chomp
         if password == password_verif 
             welcome_screen
             break
