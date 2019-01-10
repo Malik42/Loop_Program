@@ -7,11 +7,8 @@ def half_pyramid()
     else
         for nb in 1..number
             spaces = number - nb
-            spaces.times {print(" ")}
-            
-            for i in 1..nb
-                print "#"
-            end
+            print " " * spaces
+            print "#" * nb
             print "\n"
         end
     end
@@ -27,10 +24,8 @@ def full_pyramid()
         hashtag = 1
         for nb in 1..number
             spaces = number - nb
-            spaces.times {print(" ")}
-            for i in 1..hashtag
-                print "#"
-            end
+            print " " * spaces
+            print "#" * hashtag
             hashtag += 2
             print "\n"
         end
@@ -49,14 +44,8 @@ def wtf_pyramid
         spaces = (nb_user - 1) / 2
         
         for nb_n in 1..nb_user
-            
-            for spaces in 1..reverse_spaces
-                print " "
-            end
-            
-            for nb_char in 1..reverse_char
-                print "#"
-            end
+            print " " * reverse_spaces
+            print "#" * reverse_char
             
             if nb_n > ((nb_user - 1) / 2)
                 reverse_spaces += 1
